@@ -1,0 +1,56 @@
+.allusers {
+  position: absolute;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 400px;
+  max-height: 290px;
+  overflow-y: auto;
+  z-index: 2000;
+  @media (max-width: 986px) {
+    width: 350px;
+  }
+  @media (max-width: 610px) {
+    width: 300px;
+  }
+  @media (max-width: 506px) {
+    width: 350px;
+  }
+
+  .all_users-mar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    .allusers_users {
+      display: flex;
+      align-items: center;
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      span {
+        margin-left: 10px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+      }
+    }
+    .allusers_pseudo {
+      font-family: "Poppins", sans-serif;
+      background: #1877f2;
+      color: white;
+      padding: 5px;
+      border-radius: 3px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .allusers_abb {
+      font-family: "Poppins", sans-serif;
+      cursor: pointer;
+    }
+  }
+}

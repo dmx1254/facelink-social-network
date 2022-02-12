@@ -1,0 +1,10 @@
+.loadingpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    min-height: 100vh;
+    z-index: 900;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}

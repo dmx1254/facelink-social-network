@@ -1,0 +1,395 @@
+.topbar {
+  display: flex;
+  height: 60px;
+  background: #1877f2;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  min-width: 366px;
+  margin-right: 0px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 555;
+  // @media (max-width: 924px) {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+  @media (max-width: 506px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topbar__title {
+    @media (max-width: 506px) {
+      margin-left: 20px;
+    }
+    .title {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      margin-left: 30px;
+      @media (max-width: 506px) {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .topbar__search {
+    position: relative;
+    margin-left: 60px;
+    min-width: 367px;
+    @media (max-width: 986px) {
+      margin-left: 30px;
+    }
+    @media (max-width: 630px) {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 506px) {
+      position: absolute;
+      top: 50px;
+      margin: 20px 40px;
+      border: 2px solid #1877f2;
+      border-radius: none;
+    }
+    @media (max-width: 471px) {
+      margin: 20px 60px;
+    }
+    @media (max-width: 452px) {
+      margin: 20px 30px;
+    }
+    @media (max-width: 439px) {
+      margin: 20px 50px;
+    }
+    @media (max-width: 424px) {
+      margin: 20px 43px;
+    }
+    @media (max-width: 414px) {
+      margin: 20px 25px;
+    }
+    @media (max-width: 393px) {
+      margin: 20px 12px;
+    }
+    @media (max-width: 390px) {
+      margin: 20px 11px;
+    }
+    @media (max-width: 379px) {
+      margin: 20px 8px;
+    }
+
+    @media (max-width: 375px) {
+      margin: 20px 5px;
+    }
+    @media (max-width: 373px) {
+      margin: 20px 3px;
+    }
+    @media (max-width: 370px) {
+      margin: 20px 1px;
+    }
+    @media (max-width: 366px) {
+      margin: 20px 0px;
+    }
+
+    input {
+      // @media (max-width: 1292px) {
+      //   width: 100%;
+      // }
+      @media (max-width: 986px) {
+        width: 350px;
+      }
+      @media (max-width: 610px) {
+        width: 300px;
+      }
+      font-size: 15px;
+      width: 400px;
+      outline: none;
+      border: none;
+      padding: 10px 35px;
+      border-radius: 10px;
+      color: gray;
+    }
+    .icon {
+      position: absolute;
+      left: 2%;
+      top: 25%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: gray;
+    }
+  }
+
+  .topbar__nav-menu {
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
+    @media (max-width: 986px) {
+      margin-left: 10px;
+    }
+    @media (max-width: 978px) {
+      display: none;
+    }
+    .logout {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2rem;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    span {
+      margin-left: 5px;
+      // @media (max-width: 1016px) {
+      //   display: none;
+      // }
+      .topbar__nav-menu_lin {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        margin-left: 10px;
+      }
+    }
+  }
+  .topbar__userinfo {
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    @media (max-width: 986px) {
+      margin-right: 10px;
+    }
+    @media (max-width: 978px) {
+      display: none;
+    }
+    span {
+      font-size: 1.4rem;
+      color: white;
+      position: relative;
+      margin-left: 25px;
+      @media (max-width: 1292px) {
+        margin-left: 10px;
+      }
+      cursor: pointer;
+      .writer {
+        border: 3px solid white;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1.5rem;
+      }
+      p {
+        position: absolute;
+        font-size: 0.6rem;
+        top: -23%;
+        left: 70%;
+        background: #ff0000;
+        display: flex;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        text-align: center;
+      }
+    }
+    .usernotif {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      flex-direction: column;
+      top: 110%;
+      left: 60%;
+      background: gray;
+      align-items: center;
+      border-radius: 7px;
+    }
+  }
+  .topbar__user {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    .ma_wid {
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      display: none;
+      @media (max-width: 506px) {
+        display: block;
+      }
+      .notifred {
+        position: relative;
+        p {
+          position: absolute;
+          width: 17px;
+          height: 17px;
+          background: #ff0000;
+          border-radius: 50%;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          left: 68%;
+          top: -10%;
+          text-align: center;
+        }
+        .usernotif {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          flex-direction: column;
+          top: 137%;
+          left: -250px;
+          background: #1877f2;
+          align-items: center;
+          border-radius: 7px;
+          z-index: 2000;
+          width: 325px;
+          max-height: 200px;
+          overflow-y: scroll;
+        }
+        .fa-chevron-up {
+          position: absolute;
+          top: 90%;
+          font-size: 1.8rem;
+          left: -7%;
+          background: #1877f2;
+          color: #272de8;
+        }
+      }
+      span {
+        font-size: 1.6rem;
+        color: white;
+        margin-right: 15px;
+      }
+    }
+    @media (max-width: 538px) {
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+    @media (max-width: 506px) {
+      margin-right: 0px;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-top: 5px;
+      cursor: pointer;
+      @media (max-width: 506px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .profil {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 110%;
+    left: 84%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 32;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    @media (max-width: 664px) {
+      left: 76%;
+    }
+    @media (max-width: 544px) {
+      left: 72%;
+    }
+    @media (max-width: 452px) {
+      left: 69%;
+    }
+    @media (max-width: 415px) {
+      left: 65%;
+    }
+    @media (max-width: 360px) {
+      left: 62%;
+    }
+    p {
+      margin: 5px 0;
+      cursor: pointer;
+      font-family: "Roboto", sans-serif;
+      color: gray;
+    }
+    .re_search {
+      display: none;
+      @media (max-width: 506px) {
+        display: block;
+      }
+    }
+    .suggest {
+      display: none;
+      @media (max-width: 630px) {
+        display: block;
+      }
+    }
+  }
+}
+.users_search {
+  margin: 10px 450px;
+  @media (max-width: 1452px) {
+    margin: 10px 430px;
+  }
+  @media (max-width: 1376px) {
+    margin: 10px 400px;
+  }
+  @media (max-width: 1296px) {
+    margin: 10px 370px;
+  }
+  @media (max-width: 1188px) {
+    margin: 10px 350px;
+  }
+  @media (max-width: 1088px) {
+    margin: 10px 320px;
+  }
+  @media (max-width: 1008px) {
+    margin: 10px 285px;
+  }
+  @media (max-width: 986px) {
+    margin: 10px 260px;
+  }
+  @media (max-width: 968px) {
+    margin: 10px 350px;
+  }
+  @media (max-width: 876px) {
+    margin: 10px 310px;
+  }
+  @media (max-width: 812px) {
+    margin: 10px 280px;
+  }
+  @media (max-width: 760px) {
+    margin: 10px 250px;
+  }
+  @media (max-width: 712px) {
+    margin: 10px 230px;
+  }
+  @media (max-width: 656px) {
+    margin: 10px 200px;
+  }
+  @media (max-width: 596px) {
+    margin: 10px 160px;
+  }
+  @media (max-width: 548px) {
+    margin: 10px 140px;
+  }
+  @media (max-width: 508px) {
+    margin: 10px 110px;
+  }
+  @media (max-width: 506px) {
+    margin: 60px 50px;
+  }
+  @media (max-width: 452px) {
+    margin: 60px 40px;
+  }
+  @media (max-width: 412px) {
+    margin: 60px 30px;
+  }
+  @media (max-width: 388px) {
+    margin: 60px 25px;
+  }
+
+  @media (max-width: 372px) {
+    margin: 60px 15px;
+  }
+  @media (max-width: 360px) {
+    margin: 60px 8px;
+  }
+}

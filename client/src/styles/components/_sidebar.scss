@@ -1,0 +1,78 @@
+.sidebar{
+    flex: 3;
+    background: white;
+    width: 300px;
+    @media (max-width: 673px) {
+        display: none;
+    }
+    .sidebar__top{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+        .topsidebar__user{
+            display: flex;
+            align-items: center;
+            margin: 5px 5px;
+            cursor: pointer;
+
+            .span__right{
+                font-size: 1.4rem;
+            }
+            .span__left{
+                margin-left: 10px;
+                font-family: 'Poppins', sans-serif;
+                margin-top: -5px;
+            }
+
+        }
+        .topsidebar__user-buton{
+            margin: 10px 10px;
+            display: flex;
+            align-self: center;
+            button{
+                font-size: 1.2rem;
+                padding: 10px;
+                border-radius: 10px;
+                width: 150px;
+                border: none;
+                cursor: pointer;
+                background: #1877f2;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+
+    .sidebar__left{
+        margin-top: 35px;
+        .lefttopbar__user{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 25px;
+            div{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                span{
+                    margin-left: 5px;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+            .follow{
+                background: #1877f2;
+                color: white;
+                padding: 5px;
+                border-radius: 4px;
+                font-family: 'Poppins', sans-serif;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}

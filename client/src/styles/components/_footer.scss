@@ -1,0 +1,60 @@
+.footer {
+  bottom: 0px;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  z-index: 1400;
+  display: flex;
+  justify-content: space-around;
+  min-width: 366px;
+  background: #f4f4f4;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  @media (max-width: 391px) {
+      display: flex;
+      flex-direction: column;
+      height: 130px;
+      align-items: center;
+      
+  }
+  .cops {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    p {
+      color: gray;
+      font-size: 0.8rem;
+    }
+  }
+  .conta {
+    @media (max-width: 391px) {
+        margin-left: 80px;
+    }
+    span {
+      color: gray;
+      font-size: 0.8rem;
+    }
+    p {
+      transition: 0.3s;
+      font-size: 0.8rem;
+      a {
+        color: gray;
+        cursor: pointer;
+      }
+
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
+  }
+  .apping {
+    @media (max-width: 391px) {
+        margin-left: 10px;
+    }
+    p {
+      color: gray;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+  }
+}

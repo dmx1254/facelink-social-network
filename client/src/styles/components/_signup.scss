@@ -1,0 +1,125 @@
+.signup {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/mountain.png");
+  @media (max-width: 568px) {
+  }
+  .log__connect {
+    background: white;
+    width: 400px;
+    border-radius: 7px;
+    @media (max-width: 627px) {
+      width: 350px;
+    }
+    @media (max-width: 359px) {
+      width: 300px;
+    }
+    .forminput {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      input {
+        margin: 10px 0px;
+        font-size: 15px;
+        width: 250px;
+        //   padding: 5px;
+        font-family: "Poppins", sans-serif;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: gray;
+      }
+      .pass {
+        top: 64%;
+        left: 70%;
+        height: 30px;
+        cursor: pointer;
+        color: #222;
+        position: absolute;
+        left: 75%;
+        @media (max-width: 359px) {
+          left: 77%;
+        }
+      }
+      .pass1 {
+        top: 64%;
+        height: 30px;
+        left: 75%;
+        cursor: pointer;
+        color: #222;
+        position: absolute;
+        @media (max-width: 359px) {
+          left: 77%;
+        }
+      }
+
+      .pass3 {
+        top: 78%;
+        height: 30px;
+        left: 75%;
+        cursor: pointer;
+        color: #222;
+        position: absolute;
+        @media (max-width: 359px) {
+          left: 77%;
+        }
+      }
+      .pass4 {
+        top: 78%;
+        height: 30px;
+        left: 75%;
+        cursor: pointer;
+        color: #222;
+        position: absolute;
+        @media (max-width: 359px) {
+          left: 77%;
+        }
+      }
+
+      label {
+        margin-top: 5px;
+        font-family: "Poppins", sans-serif;
+        color: gray;
+      }
+      .userlock {
+        color: #bb2124;
+        font-size: 1.8rem;
+        margin: 10px 0px;
+      }
+
+      .conins {
+        border: none;
+        padding: 10px;
+        background: #1877f2;
+        color: white;
+        width: 200px;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.errors {
+  color: #ff0000;
+  font-family: "Poppins", sans-serif;
+  width: 350px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.sign {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  @media (max-width: 627px) {
+    font-size: 0.8rem;
+  }
+  margin-bottom: 10px;
+  .lin {
+    color: #1877f2;
+    font-family: "Poppins", sans-serif;
+  }
+}

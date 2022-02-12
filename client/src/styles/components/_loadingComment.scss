@@ -1,0 +1,10 @@
+.loadingcomment{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    min-height: 700vh;
+    z-index: 600;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}

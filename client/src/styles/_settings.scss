@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins&family=Roboto:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  &::selection {
+    background: #1877f2;
+    color: #ffffff;
+  }
+  &:visited {
+    color: #5bc0de;
+  }
+}
